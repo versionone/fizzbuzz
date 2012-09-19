@@ -8,8 +8,8 @@
     <ProjectGuid>{0233C51D-14EF-4226-B16B-B7352C04FCCA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bowling.Specs</RootNamespace>
-    <AssemblyName>Bowling.Specs</AssemblyName>
+    <RootNamespace>Core.Specs</RootNamespace>
+    <AssemblyName>Core.Specs</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -68,7 +68,7 @@
     <Compile Include="Infrastructure\Shoulds.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bowling\Main.csproj">
+    <ProjectReference Include="..\Core\Core.csproj">
       <Project>{9C2B758A-EE86-46F4-9CFC-06C09301DC35}</Project>
       <Name>Main</Name>
     </ProjectReference>
