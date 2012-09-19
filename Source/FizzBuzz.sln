@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Specs", "Bowling.Specs\FizzBuzz.Specs.csproj", "{0233C51D-14EF-4226-B16B-B7352C04FCCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{3FE0564A-6DF3-4C35-B02B-3B4249AFE4BA}"
-	ProjectSection(SolutionItems) = preProject
-		..\build_config.rb = ..\build_config.rb
-		..\Rakefile.rb = ..\Rakefile.rb
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Bowling\Main.csproj", "{9C2B758A-EE86-46F4-9CFC-06C09301DC35}"
 EndProject
