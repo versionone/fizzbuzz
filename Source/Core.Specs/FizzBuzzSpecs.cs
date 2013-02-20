@@ -37,4 +37,21 @@ namespace specs_for_fizz_buzz
             _result.should_equal("Fizz");
         }
     }
+
+    internal class when_fizzing_a_5: concerns
+    {
+        private string _result;
+
+        protected override void context()
+        {
+            IFizzBuzz fizzer = new FizzBuzz();
+            _result = fizzer.For(5);
+        }
+
+        [Specification]
+        private void it_should_return_Buzz()
+        {
+            _result.should_equal("Buzz");
+        }
+    }
 }
