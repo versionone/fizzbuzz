@@ -37,7 +37,7 @@ namespace Main
             }
             else
             {
-                return number.ToString();
+                return "";
             }
             
 
