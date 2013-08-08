@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Bowling.Specs.Infrastructure;
 using Main;
 
@@ -77,5 +78,49 @@ namespace specs_for_fizz_buzz
 			_output.should_equal("Fizz");
 		}
 	}
+
+
+	public class when_calling_UpTo_with_zero : concerns
+	{
+		private IEnumerable<string> _output;
+
+		protected override void context()
+		{
+
+			var fizzer = new FizzBuzz();
+			_output = fizzer.UpTo(0);
+		}
+
+		[Specification]
+		public void it_produces_one_item()
+		{
+			var count = 0;
+			foreach (var item in _output)
+			{
+				count += 1;
+			}
+			count.should_be_greater_than(0);
+		}
+	}
+
+	public class when_fizzing_a_fifteen : concerns
+	{
+		private string _output;
+
+		protected override void context()
+		{
+
+			var fizzer = new FizzBuzz();
+			_output = fizzer.For(15);
+		}
+
+		[Specification]
+		public void it_outputs_fizzbuzz()
+		{
+			_output.should_equal("FizzBuzz");
+		}
+	}
+
+
 	
 }
